@@ -1,0 +1,1050 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Gewalt einfühlen und mitfühlen</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/beige.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
+		<style class="style-fonts">
+		@font-face {
+			font-family: "Virgil";
+			src: url("https://excalidraw.com/Virgil.woff2");
+		}									
+		</style>
+
+		<style>
+			
+			.material-symbols-rounded {
+				font-variation-settings:
+				'FILL' 0,
+				'wght' 400,
+				'GRAD' -25,
+				'opsz' 48
+			}
+			
+			.reveal .slides { margin-top: 10px; }
+
+			.double-imageblock{
+				display: flex;
+				justify-content: center;
+			}
+			.double-imageblock figure{
+				width: 50%;
+			}
+			.double-imageblock figure img{
+				height: 550px;
+				object-fit: cover;
+			}
+			.double-imageblock figure video{
+				height: 380px;
+				object-fit: cover;
+			}
+
+			/*.double-imageblock figure figcaption{
+				font-size: 1.1rem;
+				margin-top: -52px;
+				margin-right: 15px;
+				text-align: right;
+				color: #fff1e8;
+				text-shadow: 0px 0px 3px #200d02
+			}*/
+			.uebersichtspunkt{
+				position: relative;
+				left: 20px;
+			}
+			.emphasize{
+				color: #ff9900;
+				text-shadow: 0px 0px 3px #000000;
+				/* font-weight: bold; */
+			}
+			.emphasize_politik{
+				color: #ff0000;
+				text-shadow: 0px 0px 3px #000000;
+			}
+			.citing{
+				text-align: right;
+				font-size: 75%;
+			}
+			#einschub {
+				color: #ff0000;
+				text-shadow: 0px 0px 3px #000000;
+				margin-top: 20px;
+				font-size: 125%;
+				font-weight: bold;
+			}
+			
+			.alltagSinnprovinz{
+				background-color: #ff990033;
+				border: 6px solid #333;
+				position:absolute;
+				border-radius: 49%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.polSinnprovinz{
+				background-color: #ff000033;
+				border: 6px solid #333;
+				position:absolute;
+				border-radius: 49%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.videoBox{
+				border: 4px solid #333;
+				background-color: #fff0ddbb;
+				border-radius: 10px;
+			}
+			@keyframes rotateUpDown {
+				0% {
+					transform: rotate(-20deg);
+				}
+				50% {
+					transform: rotate(20deg);
+				}
+				100% {
+					transform: rotate(-20deg);
+				}
+			}			
+			@keyframes moveRight {
+				0% {
+					left: 0;
+				}
+				100% {
+					left: 50%;
+				}
+			}
+			@keyframes breath {
+				0% {
+					transform: scale(6);
+				}
+				50% {
+					transform: scale(8);
+				}
+				100% {
+					transform: scale(6);
+				}
+			}
+			.reveal .footnotes {
+				font-size: 60%;
+				margin-top: 2rem;
+				text-align: left;
+			}
+			.reveal .footnotes p{
+				margin-bottom: -1rem;
+			}
+			.reveal sup {
+				font-size: 50%;
+			}
+			.cite{
+				font-size: 80%;
+				text-align: center;
+				line-height: 1.2;/* Verringert den Zeilenabstand */
+			}
+			.cite p{
+				margin: 0;
+				padding: 0;
+				display: inline;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+			<div class="slides">
+			<!-- uni wien und doctoral school-->
+				<section id="title" data-state="hide-menubar hide-menu">
+					
+					<h1 style="font-size: 6rem;">Gewalt einfühlen und mitfühlen</h1>
+					<h2 style="font-size: 3rem; margin-top:-1rem;">Affektive Teilhabe in ihrer Ermöglichung und
+						Verunmöglichung politischen Handelns</h2>
+					<h4 style="margin-top:2rem">Ein Vortrag von <a href="https://independent.academia.edu/GeorgHarfensteller" target="_blank">Georg Harfensteller</a></h4>
+					<h2 class="fragment" style="font-size: 2.5rem; color:#ff9900; margin-top:1rem"><u>Non-Trigger-Warnung:</u> Keine Gewaltdarstellungen</h2>
+					<div style="display:flex; margin-top: 30px; align-items: center; justify-content: center;">
+					<a href="https://www.univie.ac.at/" target="_blank">
+								<img src="images/1200px-Logo_Universität_Wien,_Farbe.svg.png" alt="Uni Wien logo" style="height: 100px; background: transparent;">
+							</a>
+							<a href="https://www.medunigraz.at/" target="_blank">
+								<img src="images/logo-med-uni-graz.png" alt="Med Uni Graz logo" style="height: 100px; background: transparent;">
+							</a>
+					
+						<a href="https://www.uni-graz.at/de/" target="_blank">
+							<img src="images/Logo_Uni-Graz_4c.png" alt="graz logo" style="height: 120px; background: transparent;">
+						</a>
+					
+						<a href="https://www.univie.ac.at/" target="_blank">
+								<img src="images/VdP_short_big-font.png" alt="Vdp logo" style="height: 120px; background: transparent;">
+							</a>
+						</div>
+				
+				</section>
+				<section id="intro_pic" data-state="hide-menubar hide-menu">
+				
+				<!-- two pictures side by side-->
+					<div class="double-imageblock">
+						<figure>
+							<img src="images/merkel.jpg" alt="Angela Merkel" />
+							<figcaption style="font-size:80%"><a target="_blank" href="https://www.stern.de/gesellschaft/75-jahre-stern--die-cover-im-wandel-der-zeit_33817428-33822524.html">Angela Merkel</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/scholz.jpg" alt="Olaf Scholz"/>
+							<figcaption style="font-size:80%"><a target="_blank" href="https://www.spiegel.de/politik/deutschland/olaf-scholz-ueber-migration-es-kommen-zu-viele-a-2d86d2ac-e55a-4b8f-9766-c7060c2dc38a">Olaf Scholz</a></figcaption>
+						</figure>
+					</div>
+
+				</section>
+				<section id="intro_text" data-state="hide-menubar hide-menu" data-auto-animate>
+				
+				<!-- -->
+				
+					<p><s>Emotionen in Politik,</s> <b>Politische</b> Emotionen - Unrecht, Bedrohung, Moral- oder Werteverletzung</p>
+					<p class="fragment"><b>These:</b><br> Politischer Gefühle (&rarr; pol. Handlungen) gründen in <em>negativer Affektivität</em> eingefühlte Gewalt.</p> 
+
+					<div class="fragment">
+						<p>Welche Vermögen/Erfahrungsstrukturen für <em>affektive Teilhabe</em> von erfahrener Gewalt?</p> 
+						<p>Erfahrungsinhalte/Horizonte eingefühlter Gewalt?</p> 
+					</div>
+				  <aside class="notes">
+					Klimakatastrophe, Queerfeindlichkeit, Corona-Pandemie, Black Lives Matters, Migrationspolitik beide Lage
+					(BILDER DOCH RELEVANT, nicht "in Politik", sondern als auch Mitbürger:innen in Reaktion gegenüber Griechen und Migrant:innen)
+					Zweiteres delegieren und beispeilhaft wir, ersteres maßgeblich im Vortrag!
+				  </aside>
+				</section>
+
+				<section data-name="TOC" data-sm="false">
+
+					<h2>Inhalt</h2>
+
+					<ol style="list-style-type:upper-roman">
+						<li><span class="uebersichtspunkt">Erfahrene Gewalt</span></li>
+						<li><span class="uebersichtspunkt">Edith Stein:<b> Einfühlung</b></span></li>
+						<ol style="list-style-type:lower-roman">
+							<li>Was ist (nicht) Einfühlung?</li>
+							<li><em>Konoriginarität</em> affektiver Teilhabe</li>
+						</ol>  
+						<li><span class="uebersichtspunkt">Verletzungen Einfühlen</span></li>
+						<li><span class="uebersichtspunkt">Rolle des:der gewaltsamen Dritten</span></li>
+						<li><span class="uebersichtspunkt">Fallbeispiele &rarr; Politisches Handeln</span></li>
+					</ol>
+				</section>
+
+				<section data-name="Gewalt" data-auto-animate>
+					<h3>Erfahrene Gewalt</h3>
+					<ol>
+						<li class="fragment" data-fragment-index="1">Verletzung leib. Integrität (Nicht-Können)<sup>1</sup></li>
+						<li class="fragment" data-fragment-index="2">Böswillig oder Nachlässigkeit eines:einer Dritten<sup>2</sup></li>
+						<li class="fragment" data-fragment-index="3"> Priv. &rarr; Pol. Gewalt in <em>Teilhabe/Ausbreitung</em><sup>3</sup></li>
+					</ol>
+					
+					<aside class="footnotes" class="fragment">
+						<p class="fragment" data-fragment-index="1"><sup>1</sup>Staudigl, <em>Phänomenologie der Gewalt</em> (2014), S. 75.</p>
+						<p class="fragment" data-fragment-index="2"><sup>2</sup>Shklar, <em>Faces of Injustie</em> (1990), S. 66; Delhom, <em>Normative Force of Sufferd Violence</em> (2019), S. 40.</p>
+						<p class="fragment" data-fragment-index="3"><sup>3</sup>Harfensteller, <em>Fragile Bezugsgewebe</em> (2024, Im Erscheinen).</p>
+					</aside>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Erfahrene Gewalt</h3>
+					<ol>
+						<li><span class="emphasize">Verletzung leib. Integrität</span> (Nicht-Können)<sup>1</sup></li>
+						<li>Böswillig oder Nachlässigkeit eines:einer Dritten<sup>2</sup></li>
+						<li> Priv. &rarr; Pol. Gewalt in <em>Teilhabe/Ausbreitung</em><sup>3</sup></li>
+					</ol>
+					
+					<aside class="footnotes" class="fragment">
+						<p><sup>1</sup>Staudigl, <em>Phänomenologie der Gewalt</em> (2014), S. 75.</p>
+						<p><sup>2</sup>Shklar, <em>Faces of Injustie</em> (1990), S. 66; Delhom, <em>Normative Force of Sufferd Violence</em> (2019), S. 40.</p>
+						<p><sup>3</sup>Harfensteller, <em>Fragile Bezugsgewebe</em> (2024, Im Erscheinen).</p>
+				</section>
+
+				<section data-name="Einfühlung" data-auto-animate>
+					<h3 data-id="stein">Edith Stein: Einfühlung (Allg.)</h3>
+
+					<p class="fragment">Einfühlung ist <span class="emphasize">NICHT</span>:</p>
+					<ol>
+						<li class="fragment">Wahrnehmung Leib + Urteil</li>
+						<li class="fragment">Erwartung, Erinnerung, Phantasie</li>
+						<li class="fragment">Gefühl, die sich auf Gefühle anderer richtet</li>
+						<li class="fragment">Gefühlsansteckung oder Gefühlsübertragung</li>
+					</ol>
+				</section>
+
+				<section data-auto-animate>
+					<h3 data-id="stein">Einfühlung</h3>
+					<ul class="fragment">
+						<li>Affekt gleichartig zur eingefühlten Affekt</li>
+						<li>Ungleiches Erfahrungssubjekt</li>
+						<li>Erfassende Vergegenwärtigung (Appräsentation)</li>
+					</ul>
+					<p class="fragment">Vermischung möglich, als <em>Vermögen</em> eigenständig</p>
+					<p class="fragment">Voraussetzung für <u>Wir-Gefühl</u></p>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Kon<u>originarität</u></h3>
+					<p>Husserl, <em>Ideen I</em>, § 24. Das Prinzip aller Prinzipien:</p>
+					<p>"(D)ass jede <em>originär gebende Anschauung eine Rechtsquelle der Erkenntnis sei</em>(...)."</p>
+					<p class="fragment">Einfühlung als <em>Rechtsquelle</em> der Erkenntnis</p>
+					<p class="fragment"><em>Mit</em>erfahrung originär (in leibhaften Wirklichkeit)</p>
+			
+				</section>
+
+				<section data-auto-animate>
+					<h3>Konoriginarität</h3>
+					<div class="cite">
+						<p>"Die Hand, die auf dem Tische ruht, liegt nicht da wie das Buch daneben, sie "drückt" sich gegen den Tisch (und zwar mehr oder weniger stark), sie liegt schlaff oder gestreckt da, und ich "sehe" diese </p><p>Druck- und Spannungsempfindung in der Weise der Konoriginarität</p><p>; indem ich den Erfüllungstendenzen nachgehe, die in diesem "Miterfassen" liegen, schiebt sich meine Hand (nicht realiter, sondern "gleichsam") an die Stelle der fremden, in sie hinein, nimmt ihre Lage und Haltung ein und empfindet nun ihre Empfindungen &mdash; </p><p>nicht originär und nicht als eigen, sondern "mit"</p><p>(.)"<sup>1</sup></p>
+					</div>
+					<aside class="footnotes" class="fragment">
+						<p><sup>1</sup>Stein, <em>Zum Problem der Einfühlung</em> (1917), S. 65.</p>
+						
+					</aside>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Konoriginarität</h3>
+					<div class="cite">
+						<p>"Die Hand, die auf dem Tische ruht, liegt nicht da wie das Buch daneben, sie "drückt" sich gegen den Tisch (und zwar mehr oder weniger stark), sie liegt schlaff oder gestreckt da, und ich "sehe" diese </p><p class="emphasize" data-id="druck">Druck- und Spannungsempfindung in der Weise der Konoriginarität</p><p>; indem ich den Erfüllungstendenzen nachgehe, die in diesem "Miterfassen" liegen, schiebt sich meine Hand (nicht realiter, sondern "gleichsam") an die Stelle der fremden, in sie hinein, nimmt ihre Lage und Haltung ein und empfindet nun ihre Empfindungen &mdash; </p><p class="emphasize" data-id="mit">nicht originär und nicht als eigen, sondern "mit"</p><p>(.)"<sup>1</sup></p>
+					</div>
+					<aside class="footnotes" class="fragment">
+						<p><sup>1</sup>Stein, <em>Zum Problem der Einfühlung</em> (1917), S. 65.</p>
+						
+					</aside>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Konoriginarität</h3>
+					<p class="emphasize" data-id="druck">Druck- und Spannungsempfindung in Konoriginarität</p>
+					<ul class="fragment" data-fragment-index="1" style="list-style-type:none; margin-top:-1rem; font-size:80%">
+						<li>Erlebnisfeld und Handlungsintention (&not; passive Eindrücke)</li>
+						<li>&rarrhk; (Un-)Nachgiebigkeit der Welt eingefühlt </li>
+					</ul>
+					<p class="fragment" data-fragment-index="2">(Pol.-)<u>Affektive Evaluation</u> des Verhalten-Könnens<sup>1</sup></p>
+					<p class="emphasize" data-id="mit">nicht originär und nicht als eigen, sondern "mit"</p>
+					<p class="fragment" style="list-style-type:none; margin-top:-1rem; font-size:80%">&rarr; Doppelter Empfindungsleib</p>
+					</ul>
+					<aside class="footnotes">
+						<p class="fragment" data-fragment-index="2"><sup>1</sup> Szanto, <em>Political Emotions</em> (2020), S. 481: "Rather, emotions are “feelings-towards” (Goldie 2000), or “felt evaluations” (Helm 2001)."</p>						
+					</aside>		
+				</section>
+
+				<section data-auto-animate>
+					<h3>Zweiter <u>Nullpunkt</u> der Orientierung</h3>
+
+					<div class="cite">
+						<p>"Indem ich mich nun, ihn als Empfindungsleib auffassend, einfühlend in ihn versetze, gewinne ich ein neues Bild der räumlichen Welt und einen </p><p data-id="null">neuen Nullpunkt der Orientierung</p><p>. Es ist nicht so, daß ich meinen Nullpunkt hierher verlege, denn ich behalte meinen "originären" Nullpunkt und meine "originäre" Orientierung bei, während ich einfühlend, nicht-originär die andre gewinne. (...) (E)s kommt ihm Konoriginarität zu wie den eingefühlten Empfindungen, </p><p data-id="körper">weil der Leib, auf den es bezogen ist, zugleich wahrgenommener Körper ist,</p><p> und weil es gegeben ist als originär für das andere Ich, obwohl nicht-originär für mich."<sup>1</sup></p>
+					</div>
+					<aside class="footnotes">
+						<p><sup>1</sup>Stein, <em>Zum Problem der Einfühlung</em> (1917), S. 69.</p>						
+					</aside>		
+				</section>
+
+				<section data-auto-animate>
+					<h3>Zweiter <u>Nullpunkt</u> der Orientierung</h3>
+
+					<div class="cite">
+						<p>"Indem ich mich nun, ihn als Empfindungsleib auffassend, einfühlend in ihn versetze, gewinne ich ein neues Bild der räumlichen Welt und einen </p><p class="emphasize" data-id="null">neuen Nullpunkt der Orientierung</p><p>. Es ist nicht so, daß ich meinen Nullpunkt hierher verlege, denn ich behalte meinen "originären" Nullpunkt und meine "originäre" Orientierung bei, während ich einfühlend, nicht-originär die andre gewinne. (...) (E)s kommt ihm Konoriginarität zu wie den eingefühlten Empfindungen, </p><p class="emphasize" data-id="körper">weil der Leib, auf den es bezogen ist, zugleich wahrgenommener Körper ist,</p><p> und weil es gegeben ist als originär für das andere Ich, obwohl nicht-originär für mich."<sup>1</sup></p>
+					</div>
+					<aside class="footnotes">
+						<p><sup>1</sup>Stein, <em>Zum Problem der Einfühlung</em> (1917), S. 69.</p>						
+					</aside>		
+				</section>
+
+				<section data-auto-animate>
+					<h3>Einfühlung</h3>
+					<p>Konoriginär-affektive <em>Evaluation</em> und <em>Orientierung</em></p>
+					<ol>
+						<li class="fragment">Korrektur und Abgleich (verletzender) Miterfahrung</li>
+						<li class="fragment">Miterfahrung des:der gewaltsamen Dritten</li>
+						<li class="fragment">Einfühlen <em>sozialen</em> Orientierung</li>
+					</ol>
+					<p class="fragment">Teilhabe (Un-)Nachgiebigkeit des Erfahrungsfeld &rarr; <em>gemeinsame Welt</em></p>
+				</section>
+
+				<section data-name="Verletzung" data-auto-animate>
+					<h3>Verletzungen Einfühlen</h3>
+					<p>Einfühlen in Nicht-Können aufgrund leib. Integrität<sup>1</sup></p>
+					<p> &not;Phantasie, offen und fremdbestimmt da originäre Einfühlung in <u>nicht-originären</u> Körper</p>
+					<p>Bsp: Sinnlicher Schmerz &ne; Verletzung</p>
+					<aside class="footnotes">
+						<p><sup>1</sup>Staudigl, <em>Phänomenologie der Gewalt</em> (2014), S. 75.</p>
+					</aside>
+				</section>
+				<section data-auto-animate>
+					<h3>Verletzungen Einfühlen</h3>
+					<div class="cite">
+						<p>"Wenn ich beim Anblick einer Wunde dem verletzten Schmerz einfühle, so pflege ich ihm ins Gesicht zu sehen, um durch den Ausdruck des Leidens meine Erfahrung bestätigen zu lassen. Gewahre ich statt dessen eine heitere oder gleichmütige Miene, so sage ich mir, daß er wohl doch keine Schmerzen haben muß, denn Schmerzen motivieren ihrem Sinne nach unlustvolle Gefühle, die in einem Ausdruck sichtbar werden. Weitere Prüfung (...) kann mich auch zu einer anderen Korrektur führen: daß zwar das sinnliche Gefühl vorhanden, aber sein Ausdruck willkürlich zurückgehalten ist, oder daß der Betreffende wohl den Schmerz empfindet, aber infolge einer Perversion seines Fühlens nicht daran leidet, sondern ihn genießt."<sup>1</sup></p>
+					</div>
+					<aside class="footnotes">
+						<p><sup>1</sup>Stein, <em>Zum Problem der Einfühlung</em> (1917), S. 96.</p>				
+					</aside>
+				</section>
+				<section data-auto-animate>
+					<h3>Verletzungen Einfühlen</h3>
+					<p>Handlungsfeld in eingefühlter Reaktion &rarr; komplexe emotionale Verhältnisse</p>
+					<p>Evalutaive Anziehung/Abstoßung einfühlbar</p>
+					<p style="list-style-type:none; margin-top:-1rem; font-size:80%">Schmerz als lustvolles "Ich kann" oder einschränkendes "Ich kann nicht"</p>
+					<p><span class="emphasize">Sinnlicher Affekt</span> (Schmerz) &harr; <span class="emphasize">Gefühl</span> (Unlust) &harr; <span class="emphasize">Evaluiertes</span> (Hitze) &harr; <span class="emphasize">Movens (Abstoßend)</span></p>
+				</section>
+				<section data-auto-animate>
+					<h3>Normative Verletzungen Einfühlen</h3>
+					<div class="cite">
+						<p>"Verletzlich bin ich vielmehr auch in dem, was Merleau-Ponty unseren „habituellen Leib“ (Merleau-Ponty 1966, S. 107) nennt, d. h. in jenen idealen Sinnzusammenhängen, die den habitualisierten – und d.h. auch potentiell reaktivierbaren – Spielraum meines "Ich kann" ausmachen."<sup>1</sup></p>	
+					</div>
+					<p class="fragment">&hookrightarrow; Verletzung des (normativ gesicherten) Handlungsfeldes</p>
+					<aside class="footnotes">
+						<p><sup>1</sup>Staudigl, <em>Phänomenologie der Gewalt</em> (2014), S. 157.</p>	
+					</aside>
+				</section>
+				<section data-auto-animate>
+					<h3>Normative Verletzungen Einfühlen</h3>
+					<p>Bsp: Zu spät in die Vorlesung</p>
+					<p class="fragment" data-fragment-index="1"><span class="emphasize">Sinnlicher Affekt</span> (Stocken) &harr; <span class="emphasize">Gefühl</span> (Frustration)
+					&harr;
+					<span class="emphasize">Evaluiertes</span> (Faden im Text) &harr; <span class="emphasize">Movens</span> (Ablehnenung)</p>
+					<p class="fragment" data-fragment-index="2">Alle Aspekte Leib + Körper in Gemeinsamer Welt <br> &hookrightarrow; Korrektur</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Normative Verletzungen Einfühlen</h3>
+					<p>3 Arten <em>normativer Verletzung</em><sup>1</sup>:</p>
+					<ol>
+						<li class="fragment">Verletzung Zugehörigkeit (Rassismus, Querdenker)</li>
+						<li class="fragment">Raum-Integrität (Med. Unrecht, Gender-Ideologie)</li>
+						<li class="fragment">Exist. Ermächtigung (Bildung, Klima, Migration)</li>
+					</ol>
+					<aside class="footnotes">
+						<p><sup>1</sup>Delhom, <em>Normative Force of Sufferd Violence</em> (2019), S. 46.</p>			
+					</aside>
+				</section>
+				<section data-name="Gew. Dritte" data-auto-animate>
+					<h3>Rolle des:der gewaltsamen Dritten</h3>
+					<p>Böswillig oder Nachlässigkeit eines:einer Dritten</p>
+					<ol>
+						<li class="fragment">Als eigene:r Akteur:in (George Floyde)</li>
+						<li class="fragment">Kontext (Hochwasser, Migrationspolitik)</li>
+					</ol>
+					<p class="fragment">Einfühlung in Dritte:n mögl. Korrektur-Kontext</p>
+					<p class="fragment">In <span class="emphasize">Evaluiertes</span> und <span class="emphasize">Movens</span> Dritte:r appräsentiert &rarr; Grad der Veränderbarkeit</p>
+
+				</section>
+				<section data-name="Fallbsp." data-auto-animate>
+					<h3>Fallbeispiel - Migrationsgewalt</h3>
+					<p>Syrisch-krudischer Junge <b>Alan Kurdi</b> am 2. September 2015 tot am Strand türkischer Mittelmeerküste, gestorben auf der Flucht nach Griechenland.</p>
+					<p>Alexander Gauland (Feb. 2016):</p>
+					<ul style="list-style-type:none; font-size:80%">
+						<li class="fragment">"Wir müssen die Grenzen dicht machen und dann die grausamen Bilder aushalten." &rarr; Unveränderbarkeit</li>
+						<li class="fragment">"Wir können uns nicht von Kinderaugen erpressen lassen." &rarr; Nichtteilhabe (Täuschungsversuch)</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Fallbeispiel - Wohnungslosigkeit</h3>
+					<p>Defensive Architektur (Bänke, Musik, Wechselnde Beleuchtung, Sprinkleranlagen) &rarr; Nichtteilhabe</p>
+					<p>Einfühlung unbewegter Passent:innen (Korrektur) &rarr; <em>Affektivität <u>politischer</u> Unveränderbarkeit</em></p>	
+				</section>
+				<section data-auto-animate>
+					<h3>Fallbeispiel - Revolutionärer Widerstand</h3>
+					<p>Defensive Architektur (Bänke, Musik, Wechselnde Beleuchtung, Sprinkleranlagen) &rarr; Nichtteilhabe</p>
+					<p>Einfühlung unbewegter Passent:innen (Korrektur) &rarr; <em>Affektivität <u>politischer</u> Unveränderbarkeit</em></p>	
+				</section>
+
+
+
+
+				<!--Vortrag als markdown für copilot
+		## Einführung
+
+-> Diese "Kalkulierende-Rationale" deutscher Politik denkbar ungeeignet, um über Affekte in der **Politik** als Staatsfühlung zu sprechen 
+
+**Politisch** Affekte, besonders im Kontext Bürgerbewegungen und in Demonstrationen, Versammlungen. Negative A. zeigen sich in Unrecht, Bedrohung, Moral- oder Werteverletzung, die mich betreffen können, aber nicht müssen!
+%%Klimakatastrophe, Queerfeindlichkeit, Corona-Pandemie, Black Lives Matters, Migrationspolitik beide Lager %%
+Ein Ursprung politischer Gefühle wie Wut, Angst, Ekel oder Empörung in affektiver "Reaktion" auf eingefühlte Gewalt. 
+
+**Phänomenologische Fragestellung**:
+Welche Vermögen/Erfahrungsstrukturen für *affektive Teilhabe* von erfahrener Gewalt?
+Wovon hängt eingefühlte Gewalt in Erfahrungsqualität ab? (BILDER DOCH RELEVANT, nicht "in Politik", sondern als auch Mitbürger:innen in Reaktion gegenüber Griechen und Migrant:innen)
+%% Zweiteres delegieren und beispeilhaft wir, ersteres maßgeblich im Vortrag!%%
+
+---
+## Aufbau?!
+
+ 1. (ganz kurz) Erfahrene Gewalt
+ 2. (Edit Stein Einfühlung) Phänomenologie der Teilbarkeit und Einfühlung (Von Verletzung)
+ 3. (An Beispielen) Verletzung -> Gewalt, Veränderbarkeit und Nichtteilhabe -> Handeln
+ 4. Fazit?!
+%%Aufgrund des schwerpunkts Tagung, politische Theorie und Gewaltforschung ausgespart, konzentrieren auf Phänomenologie affektiver Teilhabe.%%
+ 
+---
+## 1. Erfahrene Gewalt
+Vielseitig und Komplex, selbst Teil des politischen Diskurses (Was gilt als Gewalt?)
+
+I. Verletzung (Körperlich oder Normativ) leibhaftig gelebte Integrität des Erfahren-Könnens. Staudigl PdG 75 -> Verletzung ^= Nicht-Können!
+II. Böswillig oder Nachlässigkeit eines:einer Dritten (Shklar Faces of Injustie 1990, S. 66; Delhom Normative Force of Sufferd Violence, S. 40.) -> Begründet im (Nicht-)Handeln anderer -> *Veränderbar* L> Affektiv *Widerständigkeit/Nachgiebigkeit*
+%%"Vielmehr wird eine Verletzung nur dann als Gewalt erfahren, wenn ein in seiner Affektionsrealität verletzendes Widerfahrnis als eine fremde Sinngebung von außen erfahren wird." Staudigl Phäno der Gewalt 76%%
+III. Unterscheidung von Privater und Politischer Gewalt in *Teilhabe*/*Ausbreitung* 
+der Verletzbarkeit -> Teil *Bezugsgewebe menschlicher Angelegenheiten* %%AUF ARTIKEL VERWEISEN Zitat raussuchen, maby mit was moralischem?!  BEISPIEL Attentäter einzeltat/biologisierung(emotionstat), geisteskrankheit. %%
+ -> Bsp: Sexistische Gewalt - Erfahrung der Wiederholung (III), der Nichtanwesenheit woanders (II), Differenz leiblicher Integrität (I) 
+%%
+---
+3 Schritte
+L> Politisches Handeln auf Gewalt dann, wenn aus 
+	(I) verletzendes Nicht-könnens originär erfahren wird. (Strukturelle Gewalt nur dann begegnet, wenn es als Gewalt erfahren wird!)
+	(II) Verletzung in der Teilhabe (Originär oder **Einfühlung**) miterfahrbar
+	(III) Verletzung auf menschliches Handeln (^nicht biologie/schicksal) beruht -> Bewältigbar (Nachlässigkeit hier wichtig!)
+
+%%
+
+---
+## 2. Phänomenologie der Teilbarkeit von Verletzung
+%%einführendes Zitat?!%%
+2.1 Was ist Einfühlung (nicht)
+2.2 *Konoriginarität* affektiver Teilhabe
+2.3 Verletzungen Einfühlen
+
+---
+## 2.1 Was ist Einfühlung
+
+Einfühlung auch positive Affektivität und nicht auf Schmerz/Verletzung/Trauer beschränkt (aber häufig exemplarisch angeführt)
+Einfühlung mit Edith Stein ist NICHT:
+- Äußere Wahrnehmung (des Gesichts) + Urteil - kein Fühlen S.5
+- Erwartung, Erinnerung, Phantasie - bloße Selbigkeit S.6f
+- Gefühl, die sich auf Gefühle anderer richtet - anderes Fühlen (Objekt) S.13f%%Beispiel mit witz!%%
+- Gefühlsansteckung oder Gefühlsübertragung - kein "hinein" fühlen (bloße "innere Wahrnehmung" (S39) und keine Erkenntnisfunktion S 24f)
+%%Akt originär, Inhalt nichtoriginär mit verweiß auf damaliger originärität -> selbigkeit)%%
+
+---
+Wir sprechen also nur dann von Einfühlung, wenn:
+- Affektiv/Emotional gleichartig zur eingefühlten Erfahrung S15
+- Erfahrungssubjekt Ungleiche S10
+- Erfassende Vergegenwärtigung (Appräsentation -> Erscheinungsweise mit Erkenntnisfunktion)
+
+Vermischung möglich (Später Mitfühlen), doch als Vermögen Einfühlung eigenständig.
+So grundlegend, das Stein Einfühlen als Voraussetzung von sich als Wir-Fühlen/Eins-Fühlens setzt.
+
+-> grundlegendes Vermögen der Appräsentation (Phantasieren, Erinnern) 
+%%
+"Die Einfühlungsfreude dagegen ist ihrer Prätention nach jedenfalls und in dem idealen Falle (wo keiner￾lei Täuschung statthat) tatsächlich in jeder Beziehung der er faßten Freude gleich, hat denselben Gehalt und nur einen anderen Gegebenheitsmodus." S 15
+
+L> "Das Subjekt des eingefühlten Erlebnisses aber  - (...) - ist nicht dasselbe, das die Einfühlung vollzieht, sondern ein anderes, beide sind getrennt, nicht wie dort durch ein Bewußtsein der Selbigkeit eine Erlebniskontinuität verbunden." S 10
+%%
+
+---
+## 2.2 Konoriginarität affektiver Teilhabe
+
+(Hier erklärt sich alle drei Punkte)
+Hier klingelt es im Ohr der Husserlianerin: Ideen I §24
+"Am Prinzip aller Prinzipien: dass jede originär gebende Anschauung eine Rechtsquelle der Erkenntnis sei, dass alles, was sich uns in der „Intuition“ originär (sozusagen in seiner leibhaften Wirklichkeit) darbietet, einfach hinzunehmen sei, als was es sich gibt, aber auch nur in den Schranken, in denen es sich da gibt, kann uns keine erdenkliche Theorie irre machen.
+
+-> Stein qualifiziert die Rechtsquelle
+
+Weise des Erfahrens nicht Originär (Selbigkeit), sondern Konoriginarität (Miterfahrung)
+
+Veranschaulichen an beispiel:
+
+ 65
+"Die Hand, die auf dem Tische ruht, liegt nicht da wie das Buch daneben, sie "drückt" sich gegen den Tisch (und zwar mehr oder weniger stark), sie liegt schlaff oder gestreckt da, und ich "sehe" diese Druck- und Spannungsempfindung in der Weise der *Konoriginarität*; indem ich den Erfüllungstendenzen nachgehe, die in diesem "Miterfassen" liegen, schiebt sich meine Hand (nicht realiter, sondern "gleichsam") an die Stelle der fremden, in sie hinein, nimmt ihre Lage und Haltung ein und empfindet nun ihre Empfindungen- nicht originär und nicht als eigen, sondern "mit", genau in der Weise der Einfühlung, deren Wesen wir früher gegenüber dem eigenen Erleben und jeder andern Art der Vergegenwärtigung abgegrenzt haben." Hervorhebung GH
+
+Nicht Einfühlen bloßer passiver Eindrücke, sondern auf Leib als Erlebnisfeld und Handlungsintention ausgeweitet. -> (Un-)Nachgiebigkeit der Welt eingefühlt 
+
+!!!!%%die Rolle von affektiver intentionalität als evaluatives verhältnis zu-etwas näher bestimmen, siehe szanto political emotions 481 im auskommentierten absatz}
+%The key point of the concept is that the intentional evaluation of objects, persons and events is intrinsically linked to their affective import for the subjects of those evaluations. Intentional evaluation and affective import are not two separate components of emotions. Rather, emotions are “feelings-towards” (Goldie 2000), or “felt evaluations” (Helm 2001). Moreover, the concerns, in the light of which felt evaluations gain their affective weight so as to matter, holistically hang together. They form more or less coherent patterns that constitute the overall emotional orientations of the sub￾jects (cf. Chapter 20 in this volume).%%
+
+---
+
+Besonderheit zum vergangenen Ich oder  (Phantasieren!) (Wie sich das anfühlt, hier auf der bühne am nachmittag nach der mittagspasue witz!!)
+, sondern zweiter *Nullpunkt* der Orientierung (Fremde Intention + gemeinsame Lebenswelt)! 
+Doppelter Empfindungsleib
+
+69
+"Indem ich mich nun, ihn als Empfindungsleib auffassend, einfühlend in ihn versetze, gewinne ich ein neues Bild der räumlichen Welt und einen *neuen Nullpunkt der Orientierung. Es ist nicht so, daß ich meinen Nullpunkt hierher verlege, denn ich behalte meinen "originären" Nullpunkt und meine "originäre" Orientierung bei,* während ich einfühlend, nicht-originär die andre gewinne. Andrerseits ist es keine Phantasieorientierung, kein Phantasiebild der räumlichen Welt, das ich gewinne, sondern es kommt ihm Konoriginarität zu wie den eingefühlten Empfindungen, *weil der Leib, auf den es bezogen ist, zugleich wahrgenommener Körper ist,* und weil es gegeben ist als originär für das andere Ich, obwohl nicht-originär für mich.%% (...) Mit der Orientierung (...) ist dem Ich, das dem empfindenden Leib zugehört, die ganze Fülle äußerer Wahrnehmungen eingefühlt, in denen sich die räumliche Welt ·wesensgesetzlich konstituiert.Aus einem Subjekt, das Empfindungen hat, ist es zu einem geworden, das Akte vollzieht."%% 
+maby Abbildung unterschied?
+
+---
+Drei wichtige Faktoren konoriginäre doppelter Orientierung in *gemeinsame Welt* (politisch!).
+1. Zahllose Möglichkeiten der *Korrektur* und Abgleich der Verletzung in Miterfahrung. (gleich an bsp verletzung) %%Stein bringt selbst Masochismus als Beispiel, das auf Korrektur durch Lächeln bei Schmerz folgt. %%
+2. Mögliche Miterfahrung des:der gewaltsamen Dritten. (Einfühlung Gewalt!)
+3. Teilhabe der *sozialen* Orientierung (Abstand beim Sprechen ->reihenfolge der nennung in email) -> Normenverletzung (nichtphysische Verletzung)
+
+ -> (Un-)Nachgiebigkeit (Erfahrungsfeld) der *gemeinsamen* Welt (doppelter Nullpunkt) eingefühlt -> hierin alles, was mit "Verletzung" qualifiziert
+%%hier maby was mit action, damit die leute wach werden%%
+
+---
+## 3 Verletzungen Einfühlen
+
+Integrität des Erfahren-Könnens -> Einfühlen des Nicht-können (Staudigl PdG 75 -> Verletzung ^= Nicht-Können!) am offensichtlichsten am Schmerz.
+Rolle des "Körpers" in Welt anstatt appräsentiert in phantasie:
+
+96
+"Wenn ich beim Anblick einer Wunde dem Verletzten Schmerz einfühle, so pflege ich ihm ins Gesicht zu sehen, um durch den Ausdruck des Leidens meine Erfahrung bestätigen zu lassen. Gewahre ich statt dessen eine heitere oder gleichmütige Miene, so sage ich mir, daß er wohl doch keine Schmerzen haben muß, denn Schmerzen motivieren ihrem Sinne nach unlustvolle Gefühle, die in einem Ausdruck sichtbar werden. Weitere Prüfung (...) kann mich auch zu einer anderen Korrektur führen: daß zwar das sinnliche Gefühl vorhanden, aber sein Ausdruck willkürlich zurüchgehalten ist, oder daß der Betreffende wohl den Schmerz empfindet, aber infolge einer Perversion seines Fühlens nicht daran leidet, sondern ihn genießt."
+
+---
+
+AUFRÄUMEN
+L> Hier zeigt sich Handlungsfeld in eingefühlter Reaktion! So nicht nur leiblich-physiologisches Verhältnis zur Welt (Spannung der Hand), sondern komplexe emotionale Verhältnisse. Auch Anziehung/Abstoßung als Teile der Welt einfühlbar
+- Schmerz als lustvolles "Ich kann" oder einschränkendes "Ich kann nicht" kann eingefühlt werden.
+%% MEME BILD MIT DEM HINTERHERSCHAUN! und DAS MIT DER HAND WEGHALTEN! %%
+=> In der Einfühlung wird die Nachgiebigkeit der Welt miterfahrbar, Widerständiger Schmerz vs. Anziehender Schmerz   
+
+!!! initialer affekt schmerzaffekt (spannung beim zwicken) komplexere emotion (lustvolles hingeben), widerständigkeit/ der Welt (härte oder hitze hand nicht über flamme halten können), anziehung und absroßung (leib in welt bewegt)!!!
+
+
+---
+
+Wie mit soziale Orientierung schon angekündigt, "Ich kann" nicht auf körperliche Wunde begrenzt 
+"Verletzlich bin ich vielmehr auch in dem, was Merleau-Ponty unseren „habituellen Leib“ (Merleau-Ponty 1966: 107) nennt, d. h. in jenen idealen Sinnzusammenhängen, die den habitualisierten – und d.h. auch potentiell reaktivierbaren – Spielraum meines „Ich kann“ ausmachen." Staudigl PdG 157
+
+### Soziale Verletzung - Wichtig fürs Politische!
+Delhom - Normative Force of Suffering S.46 - drei Arten der Normen Teil von Gewalt:
+1. Normen sozialer Zugehörigkeit und Hierarchie - Insbesondere in Akten des Ausschluss aus dieser Gruppe als Deprivation und Verletzung empfinden. -> Struktureller Rassismus, Querdenker (Ausschluss aufgrund Nichtimpfung)
+2. Normen der Integrität. Grenzen und Schutz persönliche Räume (Körper, Wohnung, Privatsphäre) -> Sexistische und Ableistische Medizinische Ungerechtigkeit, Gender-Ideologie
+3. Normen existenzieller Ermächtigung. -> Entwicklung Fähigkeiten zum Wissenserwerb und zum Handeln existenzieller Selbstentfaltung. Existenzverlust in disziplinierende Maßnahmen oder Homogenisierung. -> Previliegierter Bildungsweg (wir hier), Klimaproteste, überfremdung (ahmed arian nation) und Muslimfeindlichkeit
+
+---
+Spezialfall?!:
+=> Eingefühlte Verletzung fundiert in *(Un-)Nachgiebigkeit* des leiblich-*sozialen* Spielraums des "Ich kann"
+	AUCH FALSCHE NACHGIBIGKEIT WICHTIG, wenn daraus Nicht-Können
+	- Du-zen der Lehrerin dann /spät in die Vorlesung -> wenn "gesetzte Grenze" sozialen abstands oder Pünktlichkeit das ich-kann der lehre, der bewertung und der sanktionierung zur hand
+	
+---
+
+initialer affekt verletzung (stocken in der vorlesung) komplexere emotion (frustration), widerständigkeit/ der Welt (faden verloren), anziehung und abstoßung (unwohlsein und ablehnende haltung)
+
+an allen stellen Leib und körper in gemeinsamer welt, an allen stellen korrektur möglich
+
+---
+
+## 3. Verletzung -> Gewalt, Veränderbarkeit und Teilhabe
+## 3.1 Rolle des:der Dritten
+II. Verletzung aufgrund von Böswillig oder Nachlässigkeit eines:einer Dritten (Shklar Faces of Injustice 1990, S. 66; Delhom Normative Force of Sufferd Violence, S. 40.)
+
+Dritte:r Teil der Miterfahrung möglich da gemeinsame Umwelt!
+	1. Als eigene:r Akteur:in Einfühlen (George Floyde, antisemitische Propaganda Desinteresse oder Hinterhältigkeit)
+	2. Kontext (Hochwasser ohne Notfallplan, Verletztes/unterernährtes Kind im Flüchtlingscamp/Krankenhaus, Gauland: Nicht von weinenden Kinderaugen erpressen lassen, Finanz/Migrationspolitik BILDER VOM ANFANG)
+		L> auch einfühlung in den dritten als Kontext, doch initiale Gewalt wesentlich 
+
+---
+FOLGEN EINFÜHLUNG für politisches Handeln in TEILHABE und VERÄNDERBARKEIT
+
+Fallbeispiel: Weinende Kinderaugen ->Teilhabe
+Ausgangspunkt syrisch-krudischer Junge **Alan Kurdi** tot am Strand türlkischer Mittelmeerküste angeschwemmt, beim Versuch nach Griechenland zu kommen.
+
+Von Kinderaugen nicht erpressen lassen.
+
+
+
+Grenzen Schließen und "Grausame Bilder" müssen wir aushalten. -> Unveränderbar
+
+---
+Fallbeispiel: Wohnungslosigkeit -> Unveränderbar
+Teilhabe spielt Rolle! Defensive Architektur (Bänke, Musik, Wechselnde Beleuchtung, Sprinkleranlagen)
+
+
+
+
+---
+Fallbeispiele: Despotisches Regime -> Veränderbar
+
+
+
+
+
+
+
+Fall Beispiele
+Korrektur - Phantasie 
+
+politisch 2 Varianten wichtig
+	(I) Bevölkerung/Polizei/Entscheidungsträger in Nichteteilhabe erfahren (Unterscheidung Dritter oder Mit-Angesprochen)
+	(II) Ich nicht Teilhabe an politischen Gegner
+
+---
+
+Phantasie und dem Urteil kein zweiter Nullpunkt
+Korrektur von Einfühlung (Gauland: Nicht von traurigen Kinderaugen erpressen lassen! L> Motiv der Emotion!) erlauben es zudem, die affektive Unteilbarkeit von erfahrener Gewalt zu skizzieren. Die pathisch-affektive (Nicht-)Teilhabe von Gewalt zeigt so ihren Einfluss auf gemeinsame Emotionen wie Angst oder Wut.
+
+---
+## 3. Unnachgiebigkeit verletzender Gewalt
+
+"Die Hand, die auf dem Tische ruht, liegt nicht da wie das Buch daneben, sie "drückt" sich gegen den Tisch (und zwar mehr oder weniger stark), sie liegt schlaff oder gestreckt da, und ich "sehe" diese Druck- und Spannungsempfindung in der Weise der *Konoriginarität*;" %% indem ich den Erfüllungstendenzen nachgehe, die in diesem "Miterfassen" liegen, schiebt sich meine Hand (nicht realiter, sondern "gleichsam") an die Stelle der fremden, in sie hinein, nimmt ihre Lage und Haltung ein und empfindet nun ihre Empfindungen- nicht originär und nicht als eigen, sondern "mit", genau in der Weise der Einfühlung, deren Wesen wir früher gegenüber dem eigenen Erleben und jeder andern Art der Vergegenwärtigung abgegrenzt haben."%% Hervorhebung GH
+
+---
+
+
+
+
+# Abstract
+
+Mit den Protestbewegungen der Corona- sowie Klimakrise, dem vehementen Widerstand gegen die Gleichberechtigung queerer Personen und dem jüngsten Erstarken rechtspopulistischer Parteien in Europa wird die Rolle von Emotion und Affekten auch für die gegenwärtige Philosophie immer dringlicher (Ahmed 2004, Nussbaum 2015, Szanto und Slaby 2020). Emotionen wie Wut, Angst und Ekel, aber auch emotionale Zustände wie verzweifelter Pessimismus, Lethargie oder aufrührerische Ekstase teilen in der \textit{erfahrenen Gewalt} einen möglichen Ausgangspunkt. Der Beitrag stellt zwei affektiv-intersubjektive Aspekte der Gewalterfahrung heraus, um darauf aufbauend mögliche Folgen für politisches Handeln und seine Emotionalität nachzuzeichnen.
+
+Zum einen konstituieren sich Gewalterfahrung in ihrer *Teilhabe* oder *Unteilbarkeit*. Um eine affektiv einschränkende oder eindringende Situation als gemeinsame – und damit als politische – Bedrohungssituation zu erleben bedarf es eines affektiven Übersprungs des gewaltsamen Moments zu anderen sozialen Akteur:innen. Edith Steins Konzept der \emph{Einfühlung} (Stein 1917) erlaubt es, die Möglichkeiten und Grenzen der empathischen Teilhabe solch negativ-gewaltsamer Affekte zu differenzieren, um deren Einfluss auf den politischen Diskurs besser abzubilden. Insbesondere ihr Konzeption der Konoriginarität, mit der ein originär gewaltsamer Affekt eines anderen Bewusstseins nicht-originär dem eigenen Bewusstsein vergegenwärtigt wird, kann Zusammenhänge der politischen Empathie verdeutlichen. Einfühlend werden zwei Erfahrungsnullpunkte gleichzeitig in einer gemeinsamen Welt erlebbar. Das Fehlen des fremden Nullpunktes in der Phantasie und dem Urteil sowie Steins Analyse zur Korrektur von Einfühlung erlauben es zudem, die affektive Unteilbarkeit von erfahrener Gewalt zu skizzieren. Die pathisch-affektive \mbox{(Nicht-)}Teilhabe von Gewalt zeigt so ihren Einfluss auf gemeinsame Emotionen wie Angst oder Wut.
+
+Zum anderen kündigt sich in der Unterscheidung von Aktivismus und Lethargie schon an, dass die Erfahrung gewaltsamer Situationen von deren \textit{Veränderbarkeit} abhängt (Skhlar 1990, Delhom 2019). Diese zeigt sich affektiv in der \textit{(Un-)Nachgiebigkeit} des gewaltsamen Moments, das in der Erfahrung vorgestellt wird. Wenn auch Wissen und Umgangsformen hier einen wesentlichen Einfluss haben, scheinen die Phänomene besonders spannend, in denen die affektive (Un-)Nachgiebigkeit „trotz besseren Wissens“ das Verhalten beeinflussen. Auch hier können affektiv-intersubjektive Aspekte der Einfühlung vorgestellt werden, welche die Bewältigbarkeit von gewaltsamen Momenten informiert. Steins Analyse der \textit{Erfüllungstendenz} bietet sich dafür an, welche sie am Beispiel der fremden Hand auf dem Tisch verdeutlicht (Stein 1917, S. 48, 65). Wir vergegenwärtigen uns konoriginär im Einfühlen das Empfindungsfeld und ebenso ihre Akt-erfüllende Schlaffheit oder Gestrecktheit oder ob sie mehr oder weniger gegen den Tisch drückt. Auch der Einfühlung von Gewalterfahrungen ist diese Erfüllungstendenz eingeschrieben, welche die affektive (Un-)Nachgiebigkeit des Erfahrungskorrelats miterleben lässt. So kann mit der Einfühlung in aufgebrachte Menschenmassen das despotische Regime „trotz besseren Wissens“ in seiner affektiven Nachgiebigkeit miterfahren werden, oder im Einfühlen ins desinteressierte Ignorieren von Wohnungslosigkeit ihre affektiv-informierte Unnachgiebigkeit. Auch hier lassen sich Emotionen und Verhaltensweisen vom motivierenden Affekt aus nachvollziehen.
+
+Als affektive Teilaspekte der eingefühlten Gewalterfahrung erscheinen die Teilhabe/ Unteilbarkeit wie auch die (Un-)Nachgiebigkeit des gewaltsamen Moments immer in ihrer einbrechenden Negativität. Diese negative Affektivität kann ebenso gut in einen Appell zur Bewältigung der Gewalt münden wie auch in kompensierendes Ausweichverhalten, abhängig von den jeweiligen affektiv-intersubjektiven Aspekten der Einfühlung.
+
+		-->
+				<!--
+				<section data-name="Gemeinschaft?" data-auto-animate>
+				
+					<h3>Was ist politische Gemeinschaftlichkeit?</h3>
+					
+						<p><b>Friedl. Koexistenz (Juridisch/Vertraglich/Konform.)</b></p>
+						<ul class="fragment" style="list-style-type:none; margin-top:-1rem">
+							<li>- Vereint sehr unterschiedliche Überzeugungen</li>
+							<li>- Gemeinschaftlichkeit in Krieg/Ausnahmezustand?</li>
+						</ul>
+						
+						<p class="fragment" ><b>Gemeinsamer Sinn (Urteil, Gesellschaft, Narrativ)</b></p>
+						<ul class="fragment" style="list-style-type:none; margin-top:-1rem">
+							<li>+ Status-Quo, inklusive Krieg oder Unterdrückung</li>
+							<li>- <em>post hoc</em> politischer Stiftung</li>
+						</ul>
+						
+				</section>
+				<section data-auto-animate>
+				
+					<h3>Was ist politische Gemeinschaftlichkeit?</h3>
+											
+						<p><b>Politisches Gefühl!</b><p>
+						<ul class="fragment" style="list-style-type:none; margin-top:-1rem">
+							<li>+ Stiftung Gemeinschaft & politischer Sinn</li>
+							<li>+/- Eines meist vorausgesetzt</li>
+						</ul>
+						<p class="fragment" style="font-size:80%">
+							T. Szanto und J. Slaby, <em>Political Emotions</em><br/>
+							J. Slaby und J. Bens, <em>Political Affect</em><br/>
+							L. Osler und R. R. Tietjen, <em>Affects and Emotions</em><br/>
+							T. Bedorf, <em>Politische Gefühle</em>
+						</p>
+	
+				</section>
+				<section data-name="Prä-Politik">
+					
+					<h3>Die Politik</h3>
+						
+					<p style="font-size:90%">Was Autorinnen und Autoren (...) bei aller Differenz eint, ist die Überzeugung, dass die (instituierte) Politik, über deren Krisen wir sprechen, Voraussetzungen ›macht‹, die sich nicht von selbst verstehen. Der Moment, in dem diese Voraussetzungen selbst thematisch und damit fraglich werden, ist ein politischer Stiftungsmoment: Er ist das Politische.</p>
+					<p class="citing">(Bedorf, <em>Politische Gefühle</em>, S. 251f)</p>
+					
+					<aside class="notes">
+							Politische als Gefühl ist Folge der Einflussnahme von Politik
+					</aside>
+				
+				</section>
+				<section>
+				
+					<h3>Kritik</h4>
+					
+					<p>Bedarf es Verständnis von Politik für pol. Gefühle?</p>
+	
+					<h3 style="margin-top:3rem" class="fragment" data-fragment-index="1">Gegen-These</h3>
+
+					<p class="fragment" data-fragment-index="1">Pol. Gemeinschafts-Gefühle auch "vorpolitische" Öffnung hin zu politischer Sinnsetzung</p>
+					<p class="fragment" style="margin-top:3rem">&rarrhk; Doppelte Genese <em>des Politischen</em> und <em>der Gemeinschaftlichkeit</em></p>
+						
+				</section>
+				<section data-name="Alltag" data-auto-animate data-auto-animate-restart>
+				
+					<p><b>Ort der vorpolitischen Öffnung?</b></p>
+					<p>
+						H. Arendt: <em><b>Bezugsgewebe menschlicher Angelegenheiten</b></em><span class="fragment" data-fragment-index="1">, informiert durch A. Schütz</span>
+					</p>
+				
+					<h3 class="fragment" data-fragment-index="2"><u>Alltag als Faktum der Pluralität</u></h3>
+					
+					<p class="fragment" data-fragment-index="2">Verhalten dadurch bedingt, dass <u>viele</u> Menschen die Welt bevölkern</p>
+						
+					<aside class="notes">
+						Mit-Anwesenheit ist ein begründender Umstand unseres Verhaltens - Bedingtheit
+					</aside>
+				
+				</section>
+				<section data-auto-animate>
+					
+					<h3>Alltag als Faktum der Pluralität</h3>
+					
+					<p style="font-size:90%"> Zwar ist menschliche Bedingtheit in allen ihren Aspekten auf das Politische bezogen, aber die Bedingtheit durch Pluralität steht zu dem, daß es so etwas wie Politik unter Menschen gibt, noch einmal in einem ausgezeichneten Verhältnis; sie ist nicht nur die <em>conditio sine qua non</em>, sondern die <em>conditio per quam</em>.<p>
+					<p class="citing">(Arendt, <em>Vita activa</em>, S. 14f)</p>
+					<p class="fragment"><b>Unter Menschen weilen</b> (Faktum der Pluralität) ist für <em>das Politische</em> Notwendig <span class="fragment">& <b>Ursächlich!</b></span></p>
+					
+					<aside class="notes">
+						Kein bedarf an Regulierungsinstanz, sondern bloße Koexistenz
+					</aside>
+					
+				</section>				
+				<section data-auto-animate>
+
+					<h3>Bezugsgewebe kommunikativer Umwelt</h3>
+					
+					<p style="font-size:90%"><span data-id="inserting">Inserting oneself in the web of relationships</span> and thereby partaking in a <span data-id="mode">mode of being understandable</span> is the most fundamental and basic actualization of plurality. It does not yet form a distinct “we” like that of <span data-id="action">common action or a common project</span>, but first and foremost it <span data-id="world">constitutes a common world,</span> a common understandability that functions like a <span data-id="we">“background-we.”</span></p>
+					<p class="citing"> (Loidolt, <em>Phenomenology of Plurality</em>, S. 198)</p>
+
+				</section>
+				<section data-auto-animate>
+
+					<h3>Bezugsgewebe kommunikativer Umwelt</h3>
+					
+					<p style="font-size:90%"><span class="emphasize" data-id="inserting">Inserting oneself in the web of relationships</span> and thereby partaking in a <span class="emphasize" data-id="mode">mode of being understandable</span> is the most fundamental and basic actualization of plurality. It does not yet form a distinct “we” like that of <span data-id="action">common action or a common project</span>, but first and foremost it <span class="emphasize" data-id="world">constitutes a common world,</span> a common understandability that functions like a <span class="emphasize" data-id="we">“background-we.”</span></p>
+					<p class="citing"> (Loidolt, <em>Phenomenology of Plurality</em>, S. 198)</p>
+
+				</section>
+				<section data-auto-animate>
+
+					<h3>Bezugsgewebe kommunikativer Umwelt</h3>
+					
+					<p style="font-size:90%"><span class="emphasize" data-id="inserting">Inserting oneself in the web of relationships</span> and thereby partaking in a <span class="emphasize" data-id="mode">mode of being understandable</span> is the most fundamental and basic actualization of plurality. It does not yet form a distinct “we” like that of <span data-id="action" class="emphasize_politik">common action or a common project</span>, but first and foremost it <span class="emphasize" data-id="world">constitutes a common world,</span> a common understandability that functions like a <span class="emphasize" data-id="we">“background-we.”</span></p>
+					<p class="citing"> (Loidolt, <em>Phenomenology of Plurality</em>, S. 198)</p>
+
+				</section>
+				-->
+				<!--
+				<section data-auto-animate>
+				
+					<h3>Bezugsgewebe kommunikativer Umwelt</h3>
+					
+					<p>Nur in der alltäglichen Lebenswelt kann sich eine gemeinsame kommunikative Umwelt konstituieren. Die Lebenswelt des Alltags ist folglich die vornehmliche und ausgezeichnete	Wirklichkeit des Menschen.</p>
+					<p class="citing"> (Schütz, <em>Strukturen der Lebenswelt</em>, S. 29)</p>
+				
+				</section>
+				-->
+				<!--<section data-auto-animate>
+					
+					<h3>Bezugsgewebe kommunikativer Umwelt</h3>
+					
+					<p>Politik hat Einfluss auf Bezugsgewebe menschlicher Angelegenheiten<em data-fragment-index="1" class="fragment">, aber nicht ausschließlich!</em></p>
+					
+					<p class="fragment" data-fragment-index="2"> Verstehbares Einbringen ins Bezugsgewebe Ausgangspunkt! </p>
+					
+						<p class="fragment" data-fragment-index="3" style="position:absolute; top:335px; left:0px;"><span style="color:#ff9900">Hintergrund-Wir</span> <br/> bedroht</p>
+						<p class="fragment" data-fragment-index="3" style="position:absolute; top:355px; left:290px; color:#ff9900">&rarr;</p>
+
+						<h3 class="fragment" data-fragment-index="3" style="font-size:110%; margin-top:2rem; margin-left:-6rem" data-id="RiB"><u>Risse im<br/>Bezugsgewebe</u></h3>
+						<p class="fragment" data-fragment-index="3" style="position:absolute; top:355px; left:530px; color:#ff9900">&rarr;</p>
+						<p class="fragment" data-fragment-index="3" style="position:absolute; top:335px; left:550px;">Gem. Bewältigung (<em style="color:#ff0000">gem. Handeln/Projekt</em>)</p>
+					
+				</section>
+				<section data-name="Risse im Bezugsgew." data-auto-animate>
+					
+					<h3 data-id="RiB">Risse im Bezugsgewebe</h3>
+					
+					<p><u>Konkret</u> in <b>natürlicher Einstellung</b>: Relevanz-orientierte Planerfüllung</p>
+					<p class="fragment" data-fragment-index="1">Orte des <span style="color:#ff9900">Hintergrund-Wir</span>:</p>
+						<ul class="fragment" data-fragment-index="1">
+							<li>Orientierung, Mobilität</li>
+							<li>Typisierte Interaktionen</li>
+						</ul>
+					<p class="fragment" data-fragment-index="2">Alltag tendiert zur Selbstverständlichkeit</p>
+					
+				</section>
+				<section data-auto-animate>
+				
+					<h3>Risse im Bezugsgewebe</h3>
+					
+					<p><b>Im selbstv. "alles wie gehabt" wird nichts fraglich!</b></p>
+					<p>Thomas Bedorf: "Dass die Politik (...) Voraussetzungen ›macht‹, die sich <b>nicht von selbst verstehen</b>. Der Moment, in dem diese (...) <b>fraglich werden</b>, ist ein politischer Stiftungsmoment."</p>
+				
+				</section>
+				
+				<section data-auto-animate>
+				
+					<h3>Risse im Bezugsgewebe</h3>
+						
+					<p><u>Konkretes</u> fraglich-werden: <em>Problematische Erfahrung</em></p>
+					<p class="fragment">Widerständigkeit (Unterbrechung Planverfolgung) + Bewältigung (neue Sinnauslegung)</p>
+					<p class="fragment"><u>Teil-These:</u> Gewaltsamer Widerstand in Bedrohung des <span style="color:#ff9900">Hintergrund-Wir</span></p> 
+
+				</section>
+				<section data-auto-animate>
+				
+					<h3>Risse im Bezugsgewebe</h3>
+						
+					<p>&not; "Ich kann" &plus; Aufgrund Anderer &plus; Bezugsgewebe:</p> 
+					<b> Was? &rarr; Warum? &rarr; Was steht auf dem Spiel?</b> 
+					<ol style="font-size:115%; margin-top:2rem">
+						<li class="fragment">Limitierter Möglichkeitssinn (Verletzung)</li>
+						<li class="fragment">Normativer Anspruch (Politisches)</li>
+						<li class="fragment">Bewältigung in Teilhabe (Gemeinsames)</li>
+					</ol>
+
+				</section>
+				<section data-auto-animate data-auto-animate-restart>
+				
+					<h3>1. Verletzung als limitierter Möglichkeitssinn</h3>
+
+					<p>Einschränkung des "ich kann" &rarr; <b>Vermindertes</b> Potenzial zum <u>Handeln, Sprechen und Urteilen</u></p>
+					<p class="fragment">Körperliche Verletzung, gestörtes Selbstverhältnis, gestörtes Fremdverhältnis, Widerständige Infrastruktur, Existenzielle Bedrohung</p>
+
+				</section>
+				<section data-auto-animate>
+				
+					<h3>1. Verletzung als limitierter Möglichkeitssinn</h3>
+
+					<p>&not; "Ich kann": "Ausschließung alternativer Sinnzuschreibungen, in der Erfahrung also eines sich entziehenden oder ‚enteigneten Sinnes‘.“</p>
+					<p class="citing">(Staudigl, <em>Phänomenologie der Gewalt</em>, S. 163)</p>
+					
+					<aside class="notes">
+						
+						<ul>
+							<li>Enteigneter Handlungs-Sinn inhärent leiblich</li>
+							<li>Setzt Handlungs-Möglichkeit voraus</li>
+							<li>Zielt auf <em>Zugang</em> zum Bezugsgewebe</li>
+						</ul>
+					</aside>
+
+				</section>
+				<section data-auto-animate data-auto-animate-restart>
+				
+					<h3>2. Gewalt mit normativem Anspruch</h3>
+
+					<p>&not; "Ich kann": Verletzung &rarr; Gewalt?</p> 
+					<p>Gewalt = Verletzung + <b>Motiv/Intention</b></p>
+					<p class="fragment">Normativ: Durch menschliches Handeln/ fehlende Vorsorge ausgelöst (P. Delhom, <em>The Normative Force of Suffering</em>)</p>
+						
+				</section>
+				<section data-auto-animate>
+				
+					<h3>2. Gewalt mit normativem Anspruch</h3>
+
+					<p>Unglück zu Unrecht wenn Grund der Verletzung <u>veränderbar!</u> (J. Shklar, <em>Misfortune and Injustice</em>)</p>
+					<p class="fragment"><b>Affektive Ungerechtigkeit</b> im Modus der <b>Teilhabe</b>:<br/> 
+					Norm. Überschuss zu singuläre/notwendige Gewalt</p>
+					<p><span class="fragment">Bedrohung <span style="color:#ff9900">Hintergrund-Wir</span> </span><span class="fragment">&rarr; Genese des Politischen</span></p>
+					
+				</section>
+				<section data-auto-animate data-auto-animate-restart>
+				
+					<h3>3.Politische Gewalt in teilhabender Bewältigung</h3>
+
+					<p>Wann Politische &rarr; Gemeinschaft?</p>
+					<p class="fragment">Bedrohtes <span style="color:#ff9900">Hintergrund-Wir</span> stiftet <b>politische Teilhabe</b></p>
+					<p class="fragment"><span style="color:#ff0000">gemeinsame und kollaborative Bewältigung</span> stiftet <b>gemeinschaftliche Teilhabe</b></p>
+					<p class="fragment"><em>Doppelte Genese des Politischen &and; Gemeinschaft</em></p> 
+					<h3 class="fragment" data-id="RdP" style="font-size:110%; text-decoration:underline">Realisierung der Pluralität</h3>
+			
+				</section>
+				<section data-auto-animate>
+						
+					<h3 data-id="RdP">Realisierung der Pluralität</h3>
+					<p style="font-size:90%"><span data-id="inserting"> It is in the mode of common and concerted action where I experience that the others’ movements do not impede my freedom but, to the contrary, enable it by establishing specific creative pathways that I can take up and others, again, can develop further. And only in the mode of action, realizing the conditions of plurality and natality, can the necessities of life, nature, history or other “determinations” be questioned and be opened up for a new future.</span></p>
+					<p class="citing"> (Loidolt, <em>Phenomenology of Plurality</em>, S. 207)</p>
+					
+				</section>
+				<section data-auto-animate>
+				
+					<h3>Konklusion</h3>
+
+					<p>Politische Gemeinschaft geht wesentlich auf eine Erfahrung gemeinsamer Bewältigung zurück. Im kollaborativen Verhalten zu etwas Gewaltsam-Problematischen, welches das Bezugsgewebe selbst betrifft, erscheint die Welt als sinnhaft Gemeinsame.</p>
+					<p class="fragment"><b>PS:</b> In der Überwindung des gewaltsamen Moments ist politische Gemeinschaftlichkeit auf eine Selbstüberwindung oder einer Gewaltkonservierung hin ausgelegt.</p>
+					
+				</section>
+				<section data-auto-animate >
+						
+					<h3>Kontextualisierung</h3>
+	
+					<p>Bewältigung &ne; Überwindung (Was ist Veränderbar?)</p>					
+					<p>Auch <b>Verschiebung</b> probl. Teilhabe &or; Veränderbarkeit</p> 
+					<ul class="fragment" style="font-size:85%">
+						<li>Ausschluss der Unfreien</li>
+						<li>Verschwörungserzählungen</li>
+						<li>Ideologisierung (Ethnisierung/Naturalisierung/Biologisierung)</li>
+					</ul>
+					
+					<p class="fragment">Problem. Erfahrung für Selbstverständlichkeit des Alltags "nur" auslegbar und handhabbar</p>
+					
+				</section>
+
+				<section data-name="Bonus" data-auto-animate data-auto-animate-restart>
+					
+					<h3 style="margin-bottom:-1rem">Bonus:</h3>
+					<h3 style="color:#ff9900">Typologie politischer Gemeinschaftlichkeit</h3>
+					
+					<p>Problem. Erfahrung für Selbstverständlichkeit des Alltags "nur" auslegbar und handhabbar</p>
+					<div  class="fragment">
+						<p>Form der Bewältigung &wedgeq; Spektrum der Gemeinschaft</p>
+						<p>Gemeinschafts-Typik phänomenologisch Lokalisiert: Ursprung in persönlichen Motiv &rarr; Ort im Bezuggsgewebe</p>
+						<p><b>Was ist Veränderbar?</b></p>
+					</div>
+
+				</section>
+				-->
+				
+				<section data-state="hide-menubar hide-menu">
+									
+					<h3><u>Vielen Dank für die Aufmerksamkeit</u></h3>
+						
+					<div class="double-imageblock">
+						<figure>
+							<img src="images/merkel.jpg" alt="Angela Merkel" target="_blank" />
+						</figure>
+						<figure>
+							<img src="images/scholz.jpg" alt="Olaf Scholz" target="_blank"/>
+						</figure>
+					</div>
+				
+				</section>
+
+			</div>
+
+		</div>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/simplemenu/simplemenu.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: "c/t",
+				simplemenu: {
+				// ...
+				barhtml: {
+					header: "<div class='menubar'><ul class='menu'></ul><div class='slide-number'></div><div>",
+					footer: ""
+				},
+				flat: true,
+			},
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, Simplemenu ]
+			});
+		</script>
+		<!--
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/simplemenu/simplemenu.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: "c/t",
+				simplemenu: {
+				// ...
+				barhtml: {
+					header: "<div class='menubar'><ul class='menu'></ul><div class='slide-number'></div><div>",
+					footer: ""
+				},
+				flat: true,
+			},
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, Simplemenu ]
+			});
+		</script>-->
+	</body>
+</html>
